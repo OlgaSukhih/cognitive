@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Когнитивная вовлеченность ESL студентов</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #222;
+    }
+    header {
+      background-color: #2a8;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #e0f0ea;
+      padding: 10px 20px;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #2a6;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .tab {
+      display: none;
+      padding: 20px;
+    }
+    .tab.active {
+      display: block;
+    }
+    .tab-title {
+      font-size: 1.5em;
+      color: #2a6;
+      margin-top: 20px;
+    }
+    ul {
+      margin: 10px 0 20px 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    blockquote {
+      background: #eef;
+      border-left: 4px solid #99c;
+      padding: 10px 15px;
+      margin: 20px 0;
+      font-style: italic;
+    }
+    .tab-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      background: #ddd;
+      padding: 10px;
+      justify-content: center;
+    }
+    .tab-buttons button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      background: #bbb;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .tab-buttons button.active {
+      background: #2a8;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Когнитивная вовлеченность ESL студентов</h1>
+</header>
+
+<div style="text-align: center; margin-top: -10px;">
+<p><a href="https://t.me/joinandgetinspired" target="_blank" style="color: #2a6; text-decoration: none; font-size: 1.1em;">Подписывайтесь на Telegram-канал @joinandgetinspired</a></p>
+</div>
+<!--
+  <a href="#section1">Признаки</a>
+  <a href="#section2">Обзор науки</a>
+  <a href="#section3">Scaffolding</a>
+  <a href="#section4">Стратегии</a>
+  <a href="#section5">Практики</a>
+  <a href="#section6">Заключение</a>
+-->
+
+<div class="tab-buttons">
+  <button onclick="showTab(0)" class="active">1. Признаки</button>
+  <button onclick="showTab(1)">2. Обзор науки</button>
+  <button onclick="showTab(2)">3. Scaffolding</button>
+  <button onclick="showTab(3)">4. Стратегии</button>
+  <button onclick="showTab(4)">5. Практики</button>
+  <button onclick="showTab(5)">6. Заключение</button>
+</div>
+
+<div id="tabs">
+  <div class="tab active" id="section1">
+    <h2 class="tab-title">1. Признаки низкой когнитивной вовлеченности</h2>
+    <ul>
+      <li>Отсутствие усилий при решении задач</li>
+      <li>Поверхностные ответы без попытки рассуждения</li>
+      <li>Механическое выполнение упражнений</li>
+      <li>Игнорирование ошибок</li>
+      <li>Отсутствие попыток вспоминать без подсказки</li>
+      <li>Редкое задавание вопросов</li>
+      <li>Пассивная речь</li>
+      <li>Низкий темп работы и быстрая утомляемость</li>
+      <li>Нежелание обсуждать или анализировать</li>
+      <li>Отказ от сложных или открытых заданий</li>
+      <li>Отсутствие рефлексии</li>
+      <li>Не умеет оценить собственный прогресс</li>
+      <li>Нет интереса к цели обучения</li>
+      <li>Сопротивление новым форматам или подходам</li>
+    </ul>
+  </div>
+
+  <div class="tab" id="section2">
+    <h2 class="tab-title">2. Научный обзор</h2>
+    <p>Когнитивная вовлеченность — это степень умственной активности и усилий, которые учащийся вкладывает в обучение...</p>
+    <p>Вовлеченность – многоаспектное понятие: наряду с когнитивным компонентом выделяют поведенческий и эмоциональный...</p>
+    <p>...</p>
+  </div>
+
+  <div class="tab" id="section3">
+    <h2 class="tab-title">3. Scaffolding</h2>
+    <p>Scaffolding — это временная, адаптивная поддержка со стороны преподавателя...</p>
+    <ul>
+      <li>Языковые шаблоны</li>
+      <li>Словарные подсказки</li>
+      <li>Визуальные схемы</li>
+      <li>Пошаговые инструкции</li>
+      <li>Совместное выполнение заданий</li>
+      <li>Моделирование решения задач</li>
+    </ul>
+  </div>
+
+  <div class="tab" id="section4">
+    <h2 class="tab-title">4. Когнитивные стратегии</h2>
+    <ul>
+      <li>Прогнозирование</li>
+      <li>Выделение главной мысли</li>
+      <li>Сравнение и противопоставление</li>
+      <li>Категоризация</li>
+      <li>Ментальные карты</li>
+      <li>Самопроверка</li>
+      <li>Формулировка вопросов</li>
+      <li>Переосмысление информации</li>
+    </ul>
+  </div>
+
+  <div class="tab" id="section5">
+    <h2 class="tab-title">5. Практики</h2>
+    <p>Retrieval Practice, распределённое повторение, Task-Based Learning, вопросы высокого порядка, рефлексия...</p>
+    <p>Своевременная обратная связь, геймификация, автономность и целеполагание...</p>
+  </div>
+
+  <div class="tab" id="section6">
+    <h2 class="tab-title">6. Заключение</h2>
+    <p>Обучайте когнитивным стратегиям. Добавляйте метапознание. Используйте когнитивные конфликты...</p>
+  </div>
+</div>
+
+<script>
+function showTab(index) {
+  const tabs = document.querySelectorAll('.tab');
+  const buttons = document.querySelectorAll('.tab-buttons button');
+  tabs.forEach((tab, i) => {
+    tab.classList.toggle('active', i === index);
+    buttons[i].classList.toggle('active', i === index);
+  });
+}
+</script>
+
+</body>
+</html>
